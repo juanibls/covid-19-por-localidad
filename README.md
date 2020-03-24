@@ -5,7 +5,7 @@ De acuerdo con este modelo la población de **Susceptibles** pueden infectarse a
 
 Este script es una adaptación en base a https://scipython.com/book/chapter-8-scipy/additional-examples/the-sir-epidemic-model/, para el cual se utiliza el modelo SEIR que se puede consultar en https://belenus.unirioja.es/~jvarona/coronavirus/SEIR-coronavirus.pdf
 
-El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xlsx* en el cual se carga la información específica de cada localidad. De forma alternativa, también se pueden cargar diferentes parámetros de ratio de contagio como variable de control de la política pública para ver efectos sobre el aplanamiento de la curva de diferentes alternativas de política de aislamiento social.
+El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xlsx* en el cual se carga la información específica de cada localidad. De forma alternativa, también se pueden cargar diferentes parámetros de ratio de contagio para una misma localidad como variable de control de la política pública para ver efectos sobre el aplanamiento de la curva de diferentes alternativas de política de aislamiento social.
 
 ## Archivo *Localidades SEIR.xlsx*
 ![localidades-import](https://user-images.githubusercontent.com/20490811/77479853-56e29780-6dff-11ea-814b-d8d9700cad0b.JPG)
