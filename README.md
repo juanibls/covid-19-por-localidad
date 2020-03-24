@@ -22,4 +22,7 @@ El archivo de excel tiene las siguientes columnas:
 
 Ese archivo es levantado por el script de Python que utiliza estos parámetros y las condiciones iniciales para resolver un sistema de 4 ecuaciones diferenciales simultáneas que captan la trayectoria de cada una de las curvas de **Susceptibles, Expuestos, Infectados y Recuperados** de forma tal que la sumatoria de la población que integra cada uno estos grupos da por resultado la población total.
 
+## Ecuaciones del modelo SEIR
+
+
 Como resultado de la resolución del sistema de ecuaciones diferencuales se devuelve otro archivo excel con la proyección de n-días (en el código está por defecto 180 días) para cada localidad / municipio / provincia / país. El archivo de salida *COVID-19 por localidad.xlsx* cuenta con 3 hojas con la proyección de expuestos, infectados y recuperados respectivamente.
