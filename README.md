@@ -28,4 +28,6 @@ Ese archivo es levantado por el script de Python que utiliza estos parámetros y
 Como resultado de la resolución del sistema de ecuaciones diferencuales se devuelve otro archivo excel con la proyección de n-días (en el código está por defecto 180 días) para cada localidad / municipio / provincia / país. El archivo de salida *COVID-19 por localidad.xlsx* cuenta con 3 hojas con la proyección de expuestos, infectados y recuperados respectivamente.
 
 ## Resultado de la proyección
+![localidades-export](https://user-images.githubusercontent.com/20490811/77480167-f869e900-6dff-11ea-9900-d926e80f7939.JPG)
 
+Contacto Twitter: @juanibalasini
