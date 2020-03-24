@@ -17,7 +17,7 @@ El archivo de excel tiene las siguientes columnas:
 - Infectados en día cero: debe ser un número mayor a 0.
 - Coeficiente beta: ratio de contagio, tal que 1/beta mide la probabilidad de que un susceptible se infecte cuando entra en contacto con un infectado. 
 - Coeficiente gamma: ratio de recuperación, 1/gamma es la cantidad de días que se tarda en promedio la recuperación.
-- Coeficiente sigma de incubación: ratio de incubación, 1/sigma es el tiempo promedio de incubación.
+- Coeficiente sigma: ratio de incubación, 1/sigma es el tiempo promedio de incubación.
 - R0: índice de reproducción del virus, es la relación beta/gamma, se estima entre 2 y 6 para dinámicas exponenciales, representa el número de nuevos infectados producidos por un infectado si toda la población es susceptible.
 
 Ese archivo es levantado por el script de Python que utiliza estos parámetros y las condiciones iniciales para resolver un sistema de 4 ecuaciones diferenciales simultáneas que captan la trayectoria de cada una de las curvas de **Susceptibles, Expuestos, Infectados y Recuperados** de forma tal que la sumatoria de la población que integra cada uno estos grupos da por resultado la población total.
