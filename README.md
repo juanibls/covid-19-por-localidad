@@ -3,7 +3,7 @@ Este script de Python calcula la proyección para n-próximos días de susceptib
 
 ## Simulación espacial del modelo SEIR 
 Suponiendo que cada persona puede infectar a 8 vecinos inmediatos
-
+![SIR_model_simulated_using_python](https://user-images.githubusercontent.com/20490811/77556419-4251de00-6e97-11ea-92b2-2d85a731cb45.gif)
 
 De acuerdo con este modelo la población de **Susceptibles** pueden infectarse al estar en contacto con alguien de la población de **Infectados**, en base a un parámetro β (beta) denominado "tasa de infección", que dependerá de cuán contagioso sea el virus y representa el promedio de contactos de cada persona por día multiplicado por la probabilidad de transmitir el virus en un contacto entre un infectado y una persona susceptible de ser contagiada. De esta manera, este parámetro puede ser modificado por la acción de políticas de aislamiento social. Por otro lado, los **Infectados** se recuperan con el tiempo, con un parámetro γ (gamma) denominado "tasa de recuperación" y que es la inversa de la cantidad de días que en promedio dura la enfermedad. Una vez que se recuperan se supone que los individuos son inmunes y ya no vuelven a ser susceptibles formando parte de la población de **Recuperados**. Tanto estos últimos como quienes mueren a causa de la enfermedad ya no pueden afectar al desarrollo de la epidemia. 
 
