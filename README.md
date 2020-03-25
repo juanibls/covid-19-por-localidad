@@ -1,5 +1,5 @@
 # Proyección epidemiológica de Covid-19 por localidades
-Este script de Python calcula la proyección para n-próximos días de susceptibles, expuestos, infectados y recuperados del Covid-19 de acuerdo con el Modelo epidemiológico SEIR que resulta de una adaptación del Modelo SIR (Kermack y McKendrik, 1927), el cual incorpora la población de expuestos como aquellos que están incuvando el virus pero aún no se presentan como contagiosos.
+Este script de Python calcula la proyección para n-próximos días de susceptibles, expuestos, infectados y recuperados del Covid-19 de acuerdo con el Modelo epidemiológico SEIR que resulta de una adaptación del Modelo SIR (Kermack y McKendrik, 1927), el cual incorpora la población de expuestos como aquellos que están incubando el virus pero aún no se presentan como contagiosos.
 
 ### Simulación espacial del modelo SEIR, suponiendo que cada persona puede infectar a 8 vecinos inmediatos
 ![SIR_model_simulated_using_python](https://user-images.githubusercontent.com/20490811/77556419-4251de00-6e97-11ea-92b2-2d85a731cb45.gif)
