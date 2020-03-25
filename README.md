@@ -26,7 +26,7 @@ El archivo de excel tiene las siguientes columnas:
 ***
 #### Advertencia importante: el modelo es muy sensible a los valores que se les asignan a sus parámetros, en particular al coeficiente R0 (índice de reproducción del virus). Por ejemplo, considerando valores de 1,6 (simil medidas efectivas de aislamientos social) a 4 (simil escenario sin políticas preventivas), las curvas de evolución de infectados pueden alterarse notablemente. 
 #### Simulaciones de sensibilidad de infectados a cambios en el índice de reproducción del virus
-![r0](https://user-images.githubusercontent.com/20490811/77571314-e8a7de80-6eab-11ea-8027-a89d0d286651.JPG) widht='100'
+![r0](https://user-images.githubusercontent.com/20490811/77571314-e8a7de80-6eab-11ea-8027-a89d0d286651.JPG)
 ***
 
 Ese archivo es levantado por el script de Python que utiliza estos parámetros y las condiciones iniciales para resolver un sistema de 4 ecuaciones diferenciales simultáneas que captan la trayectoria de cada una de las curvas de **Susceptibles, Expuestos, Infectados y Recuperados** de forma tal que la sumatoria de la población que integra cada uno estos grupos da por resultado la población total.
