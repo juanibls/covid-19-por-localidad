@@ -11,8 +11,7 @@ Este script es una adaptación en base a https://scipython.com/book/chapter-8-sc
 El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xlsx* en el cual se carga la información específica de cada localidad. De forma alternativa, también se pueden cargar diferentes parámetros de ratio de contagio para una misma localidad como variable de control de la política pública para ver efectos sobre el aplanamiento de la curva de diferentes alternativas de política de aislamiento social.
 
 ### Archivo *Localidades SEIR.xlsx*
-
-
+![localidades-import](https://user-images.githubusercontent.com/20490811/77917399-e9a48b80-7270-11ea-9666-78f8b44d4c34.JPG)
 
 El archivo de excel tiene las siguientes columnas:
 
