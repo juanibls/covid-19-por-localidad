@@ -1,4 +1,4 @@
-# Proyección epidemiológica de Covid-19 por localidades
+# Proyección epidemiológica de Covid-19 por localidades y simulación de medidas de aislamiento
 Este script de Python calcula la proyección para n-próximos días de susceptibles, expuestos, infectados y recuperados del Covid-19 de acuerdo con el Modelo epidemiológico SEIR que resulta de una adaptación del Modelo SIR (Kermack y McKendrik, 1927), el cual incorpora la población de expuestos como aquellos que están incubando el virus pero aún no se presentan como contagiosos.
 
 ### Simulación espacial del modelo SEIR, suponiendo que cada persona puede infectar a 8 vecinos inmediatos
@@ -11,7 +11,7 @@ Este script es una adaptación en base a https://scipython.com/book/chapter-8-sc
 El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xlsx* en el cual se carga la información específica de cada localidad. De forma alternativa, también se pueden cargar diferentes parámetros de ratio de contagio para una misma localidad como variable de control de la política pública para ver efectos sobre el aplanamiento de la curva de diferentes alternativas de política de aislamiento social.
 
 ### Archivo *Localidades SEIR.xlsx*
-![localidades-import](https://user-images.githubusercontent.com/20490811/77479853-56e29780-6dff-11ea-814b-d8d9700cad0b.JPG)
+![localidades-import](https://user-images.githubusercontent.com/20490811/77917399-e9a48b80-7270-11ea-9666-78f8b44d4c34.JPG)
 
 El archivo de excel tiene las siguientes columnas:
 
