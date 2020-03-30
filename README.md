@@ -11,7 +11,7 @@ Este script es una adaptación en base a https://scipython.com/book/chapter-8-sc
 El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xlsx* en el cual se carga la información específica de cada localidad. De forma alternativa, también se pueden cargar diferentes parámetros de ratio de contagio para una misma localidad como variable de control de la política pública para ver efectos sobre el aplanamiento de la curva de diferentes alternativas de política de aislamiento social.
 
 ### Archivo *Localidades SEIR.xlsx*
-![localidades-export](https://user-images.githubusercontent.com/20490811/77917412-ee693f80-7270-11ea-9409-6da179a0d687.JPG)
+
 
 
 El archivo de excel tiene las siguientes columnas:
@@ -38,6 +38,6 @@ Ese archivo es levantado por el script de Python que utiliza estos parámetros y
 Como resultado de la resolución del sistema de ecuaciones diferencuales se devuelve otro archivo excel con la proyección de n-días (en el código está por defecto 180 días) para cada localidad / municipio / provincia / país. El archivo de salida *COVID-19 por localidad.xlsx* cuenta con 3 hojas con la proyección de expuestos, infectados y recuperados respectivamente.
 
 ### Resultado de la proyección
-![localidades-export](https://user-images.githubusercontent.com/20490811/77480167-f869e900-6dff-11ea-9900-d926e80f7939.JPG)
+![localidades-export](https://user-images.githubusercontent.com/20490811/77917412-ee693f80-7270-11ea-9409-6da179a0d687.JPG)
 
 Contacto Twitter: @juanibalasini
