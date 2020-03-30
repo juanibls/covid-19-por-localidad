@@ -15,13 +15,20 @@ El script toma los parámetros de un archivo Excel llamado *Localidades SEIR.xls
 
 El archivo de excel tiene las siguientes columnas:
 
-- Nombre: de la localidad, municipio, provincia, pais. 
-- Población total: de la localidad, municipio, provincia o pais.
-- Infectados en día cero: debe ser un número mayor a 0.
-- Coeficiente beta: ratio de contagio, tal que 1/beta mide la probabilidad de que un susceptible se infecte cuando entra en contacto con un infectado. 
-- Coeficiente gamma: ratio de recuperación, 1/gamma es la cantidad de días que se tarda en promedio la recuperación.
-- Coeficiente sigma: ratio de incubación, 1/sigma es el tiempo promedio de incubación.
-- R0: índice de reproducción del virus, es la relación beta/gamma, representa el número de nuevos infectados producidos por un infectado si toda la población es susceptible.
+- Escenario: resume el escenario con el nombre de la localidad, el día de inicio de medidas y el detalle de las mismas. 
+- Localidad: nombre de la localidad, municipio, provincia, pais. 
+- Población: de la localidad, municipio, provincia o pais.
+- Inicial: Infectados en día cero, debe ser un número mayor a 0.
+- Beta1: ratio de contagio sin intervención con medidas de aislamiento, tal que 1/beta mide la probabilidad de que un susceptible se infecte cuando entra en contacto con un infectado. 
+- Gamma: ratio de recuperación, 1/gamma es la cantidad de días que se tarda en promedio la recuperación.
+- Sigma: ratio de incubación, 1/sigma es el tiempo promedio de incubación.
+- R0_1: índice de reproducción del virus sin intervención con medidas de aislamiento, es la relación beta/gamma, representa el número de nuevos infectados producidos por un infectado si toda la población es susceptible.
+- Beta_medidas: ratio de contagio luego de la intervención con medidas de aislamiento.
+- Dias: ventana de proyección de las curvas.
+- Inicio_medidas: día a partir del cual se inician las medidas de aislamiento.
+- Duracion_medidas: cantidad de días que duran las medidas de aislamiento.
+- R0_medidas: índice de reproducción del virus durante la intervención con medidas de aislamiento
+- Efectividad_medidas: medido en términos de la reducción en porcentaje del R0 antes y a partir de las medidas de aislamiento. 
 
 ***
 #### ADVERTENCIA: el modelo es muy sensible a los valores que se les asignan a sus parámetros, en particular al coeficiente R0 (índice de reproducción del virus). Por ejemplo, considerando valores de 1,6 (simil medidas efectivas de aislamientos social) a 4 (simil escenario sin políticas preventivas), las curvas de evolución de infectados pueden alterarse notablemente. 
