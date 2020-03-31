@@ -30,6 +30,8 @@ El archivo de excel tiene las siguientes columnas:
 - R0_medidas: índice de reproducción del virus durante la intervención con medidas de aislamiento
 - Efectividad_medidas: medido en términos de la reducción en porcentaje del R0 antes y a partir de las medidas de aislamiento. 
 
+**Las columnas en celeste son las que se deben parametrizar, mientras que el resto salen como resultado de los valores que se pongan en las primeras**
+
 ***
 #### ADVERTENCIA: el modelo es muy sensible a los valores que se les asignan a sus parámetros, en particular al coeficiente R0 (índice de reproducción del virus). Por ejemplo, considerando valores de 1,6 (simil medidas efectivas de aislamientos social) a 4 (simil escenario sin políticas preventivas), las curvas de evolución de infectados pueden alterarse notablemente. 
 #### Simulaciones de sensibilidad de infectados a cambios en el índice de reproducción del virus
