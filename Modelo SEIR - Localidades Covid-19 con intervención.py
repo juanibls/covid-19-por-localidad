@@ -11,25 +11,8 @@ import numpy as np
 from scipy.integrate import odeint
 import pandas as pd
 from pandas import ExcelWriter
-  
-''' Se construye un DataFrame a partir de la tabla paramétrica de municipios: 
-    Nombre de la localidad / municipio / provincia / pais, 
-    
-    Población de la localidad / municipio / provincia / pais,
-    
-    Infectados en día cero, 
-    
-    Coeficiente beta (ratio de contagio, tal que 1/beta mide la probabilidad de que un susceptible se infecte cuando 
-    entra en contacto con un infectado), 
-    
-    Coeficiente gamma (ratio de recuperación, 1/gamma es la cantidad de días que se tarda en promedio la recuperación),
-    
-    Coeficiente sigma de incubación (ratio de incubación, 1/sigma es el tiempo promedio de incubación)
-    
-    R0 (índice de reproducción del virus, es la relación beta/gamma, se estima en 2.25, representa el número de 
-    nuevos infectados producidos por un infectado si toda la población es susceptible)'''
 
-df1 = pd.read_excel('Localidades SEIR v2.xlsx') 
+df1 = pd.read_excel('Localidades SEIR.xlsx') 
 
 # Armamos un dataframe vacío donde pondremos todos los resultados
 data = pd.DataFrame()
@@ -107,7 +90,7 @@ expuestos = pd.pivot_table(data, index=['Dia desde primer caso'],
                      columns=["Escenario"], values = ['Expuestos'], aggfunc=np.sum)
 
 # Crea un excel
-writer = ExcelWriter('COVID-19 por localidad v2.xlsx')
+writer = ExcelWriter('COVID-19 por localidad.xlsx')
 
 # Graba las tablas dinámicas en una hoja específica del archivo excel
 infectados.to_excel(writer, 'Infectados')
