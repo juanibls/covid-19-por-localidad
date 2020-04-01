@@ -20,7 +20,7 @@ El archivo de excel tiene las siguientes columnas:
 - Población: de la localidad, municipio, provincia o pais.
 - Inicial: Infectados en día cero, debe ser un número mayor a 0.
 - Beta1: ratio de contagio sin intervención con medidas de aislamiento, tal que 1/beta mide la probabilidad de que un susceptible se infecte cuando entra en contacto con un infectado. 
-- Gamma: ratio de recuperación, 1/gamma es la cantidad de días que se tarda en promedio la recuperación.
+- Gamma: ratio de recuperación o infeccioso, 1/gamma es la cantidad de días que se tarda en promedio la recuperación.
 - Sigma: ratio de incubación, 1/sigma es el tiempo promedio de incubación.
 - R0_1: índice de reproducción del virus sin intervención con medidas de aislamiento, es la relación beta/gamma, representa el número de nuevos infectados producidos por un infectado si toda la población es susceptible.
 - Beta_medidas: ratio de contagio luego de la intervención con medidas de aislamiento.
