@@ -48,4 +48,8 @@ Como resultado de la resolución del sistema de ecuaciones diferencuales se devu
 ### Resultado de la proyección
 ![localidades-export](https://user-images.githubusercontent.com/20490811/77917412-ee693f80-7270-11ea-9409-6da179a0d687.JPG)
 
+### Evaluación de diferentes alternativas de medidas de aislamiento social
+
+
+
 Contacto Twitter: @juanibalasini
