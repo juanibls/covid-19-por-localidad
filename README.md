@@ -33,7 +33,7 @@ El archivo de excel tiene las siguientes columnas:
 **Las columnas en celeste son las que se deben parametrizar, mientras que el resto salen como resultado de los valores que se pongan en las primeras**
 
 ***
-#### ADVERTENCIA: el modelo es muy sensible a los valores que se les asignan a sus parámetros, en particular al coeficiente R0 (índice de reproducción del virus). Por ejemplo, considerando valores de 1,6 (simil medidas efectivas de aislamientos social) a 4 (simil escenario sin políticas preventivas), las curvas de evolución de infectados pueden alterarse notablemente. 
+#### ADVERTENCIA 1#: el modelo es muy sensible a los valores que se les asignan a sus parámetros, en particular al coeficiente R0 (índice de reproducción del virus). Por ejemplo, considerando valores de 1,6 (simil medidas efectivas de aislamientos social) a 4 (simil escenario sin políticas preventivas), las curvas de evolución de infectados pueden alterarse notablemente. 
 #### Simulaciones de sensibilidad de infectados a cambios en el índice de reproducción del virus
 ![r0](https://user-images.githubusercontent.com/20490811/77917954-98e16280-7271-11ea-821a-ef45a0f2f46f.JPG)
 ***
@@ -42,6 +42,8 @@ Ese archivo es levantado por el script de Python que utiliza estos parámetros y
 
 ### Ecuaciones del modelo SEIR
 ![ecuaciones](https://user-images.githubusercontent.com/20490811/77480037-b2148a00-6dff-11ea-90de-99ea4d89e316.JPG)
+
+#### ADVERTENCIA 2#: algunos estudios incorporan a este modelo otras características como la presencia de individuos asintomáticos (pero que sí pueden contagiar a otros) o personas que nunca se infectan (algunos plantean que esto ocurre con los niños). Estas y otras alternativas implican que el sistema tenga más ecuaciones, lo cual no es complejo desde el punto de vista matemático.  El verdadero problema es que esto implica más parámetros a estimar lo cual lleva a una mayor complejidad y varianza en las proyecciones. 
 
 Como resultado de la resolución del sistema de ecuaciones diferencuales se devuelve otro archivo excel con la proyección de n-días (en el código está por defecto 180 días) para cada localidad / municipio / provincia / país. El archivo de salida *COVID-19 por localidad.xlsx* cuenta con 3 hojas con la proyección de expuestos, infectados y recuperados respectivamente.
 
